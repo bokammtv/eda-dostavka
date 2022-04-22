@@ -194,7 +194,7 @@ function searchData(data){
 
 function searchBtnHandler(data){
     let result = searchData(data);
-    renderTable(result);
+    renderTable(result, 1);
 }
 
 // Создание таблицы
@@ -358,6 +358,6 @@ function renderPaginationElement(currentPage, lastPage) {
 window.onload = () => {
     getRest(1);
     document.querySelector('.pagination').onclick = pageBtnHandler;
-    document.querySelector('.searchBtn').onclick = searchBtnHandler(getData);
+    //document.querySelector('.searchBtn').onclick = searchBtnHandler(getData());
     
 }
